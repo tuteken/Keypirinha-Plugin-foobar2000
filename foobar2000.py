@@ -2,7 +2,7 @@
 
 import keypirinha as kp
 import keypirinha_util as kpu
-import os
+import subprocess
 
 class foobar2000(kp.Plugin):
     """
@@ -63,7 +63,9 @@ class foobar2000(kp.Plugin):
         self.dbg("On execute (item {} : action {})".format(item, action))
         command = "\"{}\" /{}".format(self.file_path, item.target())
         self.dbg(command)
-        os.system(command)
+        si = subprocess.STARTUPINFO()
+        si.dwFlags = subprocess.STARTF_USESHOWWINDOW
+        subprocess.call(command, startupinfo=si)
 
     def _read_config(self):
         self.dbg("Read Config")
