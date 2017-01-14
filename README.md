@@ -12,9 +12,7 @@ Configuration
 
 A Pinboard API key is require in order to retrieve bookmarks
 
-1. Copy API key from: https://pinboard.in/settings/password
-2. Paste API key in the user version of pinboard.ini 
-    * type "Configure Package: Pinboard" into Keypirinha to open the configuration file
+1. Provide the path to the foobar2000 executable, if not "C:\Program Files (x86)\foobar2000\foobar2000.exe"
 
 Release Notes
 -------------
