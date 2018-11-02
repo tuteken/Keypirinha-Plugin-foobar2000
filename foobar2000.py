@@ -33,7 +33,7 @@ class foobar2000(kp.Plugin):
 
     def __init__(self):
         super().__init__()
-        self._debug = True
+        self._debug = False
         self.dbg("CONSTRUCTOR")
         self.on_catalog()
 
