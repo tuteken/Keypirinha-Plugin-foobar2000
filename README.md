@@ -10,11 +10,11 @@ Download
 Configuration
 -------------
 
-A Pinboard API key is require in order to retrieve bookmarks
-
 1. Provide the path to the foobar2000 executable, if not "C:\Program Files (x86)\foobar2000\foobar2000.exe"
 
 Release Notes
 -------------
+
+
 **V 1.0**
 - First release of plugin
