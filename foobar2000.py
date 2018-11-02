@@ -33,7 +33,7 @@ class foobar2000(kp.Plugin):
 
     def __init__(self):
         super().__init__()
-        self._debug = False
+        self._debug = True
         self.dbg("CONSTRUCTOR")
         self.on_catalog()
 
@@ -61,7 +61,7 @@ class foobar2000(kp.Plugin):
 
     def on_execute(self, item, action):
         self.dbg("On execute (item {} : action {})".format(item, action))
-        command = "\"{}\" /{}".format(self.file_path, item.target())
+        command = "{} /{}".format(self.file_path, item.target())
         self.dbg(command)
         si = subprocess.STARTUPINFO()
         si.dwFlags = subprocess.STARTF_USESHOWWINDOW
